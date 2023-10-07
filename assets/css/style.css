@@ -1,0 +1,316 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0 1px 4px #2020209f;
+  top: 0;
+  position: sticky;
+}
+
+.container {
+  max-width: 962px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.flex-header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+}
+
+.logo-icon {
+  padding-right: 5px;
+}
+
+.toggle-theme {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.toggle-theme:hover {
+  transform: translateY(-1px);
+}
+
+.toggle-icon {
+  font-size: 26px;
+}
+
+section {
+  padding: 40px 0;
+}
+
+.section-container {
+  padding: 5px 0 40px 0;
+}
+
+.box {
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px 2px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #000;
+}
+
+.form-group > label {
+  font-size: 14px;
+}
+
+.form-group > input {
+  font-size: 16px;
+  height: 36px;
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  background-color: transparent;
+}
+
+.btn {
+  font-size: 14px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  margin-top: 10px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #1b1b1b;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.box-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-top: 20px;
+}
+
+.box-item {
+  background-color: #ececec5e;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px 2px;
+}
+
+.book-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+
+.book-desc {
+  font-size: 14px;
+}
+
+.btn-group {
+  display: inline-flex;
+  column-gap: 5px;
+  margin: 15px 0;
+}
+
+.btn-action {
+  background-color: #000;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 3px;
+  padding: 5px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-action:hover {
+  background-color: #1b1b1b;
+}
+
+.btn-action.delete {
+  background-color: #fc3131;
+}
+.btn-action.delete:hover {
+  background-color: #df0404;
+}
+
+.footer {
+  box-shadow: 0 1px 4px #2020209f;
+  padding: 20px 0;
+}
+
+.footer > p {
+  font-size: 12px;
+  text-align: center;
+}
+
+/* dark */
+.dark,
+.dark header,
+.dark .footer {
+  background-color: #080808;
+  box-shadow: 0 1px 4px #9999999f;
+}
+
+.dark .logo,
+.dark .toggle-icon,
+.dark .title,
+.dark label,
+.dark input,
+.dark .book-title,
+.dark .book-desc,
+.dark .footer > p {
+  color: #fff;
+}
+
+.dark .btn:hover,
+.dark .btn-action:hover {
+  background-color: #494949;
+}
+
+.dark .box {
+  box-shadow: rgba(255, 255, 255, 0.3) 0 2px 5px 2px;
+  background-color: #1c1c1c;
+}
+
+.dark .box-item {
+  box-shadow: rgba(255, 255, 255, 0.3) 0 2px 5px 2px;
+  background-color: #313131;
+}
+
+.dark .form-group {
+  border-bottom: 1px solid #fff;
+}
+/* dark */
+
+@media screen and (max-width: 320px) {
+  .container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .flex-header {
+    height: 50px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .toggle-icon {
+    font-size: 18px;
+  }
+
+  section {
+    padding: 30px 0;
+  }
+
+  .box {
+    padding: 20px;
+  }
+
+  .form-group > label {
+    font-size: 12px;
+  }
+
+  .form-group > input {
+    font-size: 14px;
+    height: 28px;
+    padding: 3px 8px;
+  }
+
+  .btn {
+    font-size: 12px;
+    margin-top: 8px;
+    padding: 10px 18px;
+  }
+
+  .book-title {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .book-desc {
+    font-size: 12px;
+  }
+
+  .btn-group {
+    margin: 10px 0;
+  }
+
+  .footer {
+    padding: 15px 0;
+  }
+
+  .footer > p {
+    font-size: 10px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .box-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .box-item {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .content {
+    flex-direction: row;
+    column-gap: 30px;
+  }
+
+  .left,
+  .right {
+    flex: 1;
+  }
+}

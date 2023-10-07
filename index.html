@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf App</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container flex-header">
+        <div class="logo">
+          <i class="ri-book-open-line logo-icon"></i>
+          BOOKS
+        </div>
+        <div class="toggle-theme">
+          <i class="ri-moon-line toggle-icon" id="toggleTheme"></i>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="container">
+        <div class="box">
+          <h3 class="title">Tambahkan Buku Baru</h3>
+          <form id="form">
+            <div class="form-group">
+              <label for="title">Judul</label>
+              <input
+                type="text"
+                id="title"
+                required
+                autofocus
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-group">
+              <label for="author">Penulis</label>
+              <input type="text" id="author" required autocomplete="off" />
+            </div>
+            <div class="form-group">
+              <label for="year">Tahun</label>
+              <input type="text" id="year" required />
+            </div>
+            <button type="submit" class="btn">Simpan</button>
+          </form>
+        </div>
+      </section>
+      <section class="section-container container">
+        <div class="content">
+          <div class="box left">
+            <h3 class="title">Buku Belum Dibaca</h3>
+            <div class="box-content" id="uncompleted"></div>
+          </div>
+          <div class="box right">
+            <h3 class="title">Buku Sudah Dibaca</h3>
+            <div class="box-content" id="completed"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Submission Dicoding</p>
+      <p>Belajar Membuat Front-End Web untuk Pemula</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
