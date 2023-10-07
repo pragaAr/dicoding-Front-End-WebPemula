@@ -8,6 +8,12 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 header {
   background-color: #fff;
   box-shadow: 0 1px 4px #2020209f;
