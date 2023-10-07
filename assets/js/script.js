@@ -14,7 +14,7 @@ function generateBookObject(id, title, author, year, completed) {
     id,
     title,
     author,
-    year,
+    year: Number(year),
     completed,
   };
 }
