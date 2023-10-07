@@ -219,11 +219,9 @@ document.addEventListener(RENDER_EVENT, function () {
 
   for (const bookItem of books) {
     const bookElement = makeBook(bookItem);
-    if (bookItem.completed) {
-      listBookCompleted.append(bookElement);
-    } else {
-      uncompletedBookList.append(bookElement);
-    }
+    bookItem.completed
+      ? listBookCompleted.append(bookElement)
+      : uncompletedBookList.append(bookElement);
   }
 });
 
