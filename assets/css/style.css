@@ -180,6 +180,7 @@ form {
 .footer {
   box-shadow: 0 1px 4px #2020209f;
   padding: 20px 0;
+  bottom: 0;
 }
 
 .footer > p {
